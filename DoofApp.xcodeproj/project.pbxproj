@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77E0AB6E1EB8CFE300A2D626 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E0AB6D1EB8CFE300A2D626 /* main.m */; };
+		77E0AB711EB8CFE300A2D626 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E0AB701EB8CFE300A2D626 /* AppDelegate.m */; };
+		77E0AB771EB8CFE300A2D626 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E0AB751EB8CFE300A2D626 /* Main.storyboard */; };
+		77E0AB791EB8CFE300A2D626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77E0AB781EB8CFE300A2D626 /* Assets.xcassets */; };
+		77E0AB7C1EB8CFE300A2D626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E0AB7A1EB8CFE300A2D626 /* LaunchScreen.storyboard */; };
+		77E0AB871EB8CFE300A2D626 /* DoofAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E0AB861EB8CFE300A2D626 /* DoofAppTests.m */; };
+		77E0AB921EB8CFE300A2D626 /* DoofAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E0AB911EB8CFE300A2D626 /* DoofAppUITests.m */; };
+		77E0ABA11EB8D0F400A2D626 /* DVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E0ABA01EB8D0F400A2D626 /* DVideoController.m */; };
+		77E0ABA41EB8D6CD00A2D626 /* DVideoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E0ABA31EB8D6CD00A2D626 /* DVideoObject.m */; };
+		77E0ABAA1EB8E2DA00A2D626 /* DUserStoreObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E0ABA91EB8E2DA00A2D626 /* DUserStoreObject.m */; };
+		77E0ABAE1EB905DC00A2D626 /* NSString+EmailAddresses.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E0ABAD1EB905DC00A2D626 /* NSString+EmailAddresses.m */; };
+		81CCDC536B29E490F3B84CC9 /* libPods-DoofAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E9AF48DDABF6518D61BD1D /* libPods-DoofAppTests.a */; };
+		8FE4EDC799862DBD004A9CFF /* libPods-DoofAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A54D710A7C69B09E6FA20863 /* libPods-DoofAppUITests.a */; };
+		F782F09597D118D9AE48EB69 /* libPods-DoofApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A937C61363373E59322094 /* libPods-DoofApp.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77E0AB831EB8CFE300A2D626 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77E0AB611EB8CFE200A2D626 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77E0AB681EB8CFE300A2D626;
+			remoteInfo = DoofApp;
+		};
+		77E0AB8E1EB8CFE300A2D626 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77E0AB611EB8CFE200A2D626 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77E0AB681EB8CFE300A2D626;
+			remoteInfo = DoofApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06E9AF48DDABF6518D61BD1D /* libPods-DoofAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoofAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		228651A8C1BE9A40E281EE33 /* Pods-DoofAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoofAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoofAppTests/Pods-DoofAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		65A937C61363373E59322094 /* libPods-DoofApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoofApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77E0AB691EB8CFE300A2D626 /* DoofApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoofApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77E0AB6D1EB8CFE300A2D626 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		77E0AB6F1EB8CFE300A2D626 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		77E0AB701EB8CFE300A2D626 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		77E0AB761EB8CFE300A2D626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		77E0AB781EB8CFE300A2D626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77E0AB7B1EB8CFE300A2D626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77E0AB7D1EB8CFE300A2D626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77E0AB821EB8CFE300A2D626 /* DoofAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoofAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77E0AB861EB8CFE300A2D626 /* DoofAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoofAppTests.m; sourceTree = "<group>"; };
+		77E0AB881EB8CFE300A2D626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77E0AB8D1EB8CFE300A2D626 /* DoofAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoofAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77E0AB911EB8CFE300A2D626 /* DoofAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoofAppUITests.m; sourceTree = "<group>"; };
+		77E0AB931EB8CFE300A2D626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77E0AB9F1EB8D0F400A2D626 /* DVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVideoController.h; sourceTree = "<group>"; };
+		77E0ABA01EB8D0F400A2D626 /* DVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVideoController.m; sourceTree = "<group>"; };
+		77E0ABA21EB8D6CD00A2D626 /* DVideoObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVideoObject.h; sourceTree = "<group>"; };
+		77E0ABA31EB8D6CD00A2D626 /* DVideoObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVideoObject.m; sourceTree = "<group>"; };
+		77E0ABA51EB8D6E200A2D626 /* DContstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DContstants.h; sourceTree = "<group>"; };
+		77E0ABA61EB8DE6000A2D626 /* DoofApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DoofApp.entitlements; sourceTree = "<group>"; };
+		77E0ABA81EB8E2DA00A2D626 /* DUserStoreObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUserStoreObject.h; sourceTree = "<group>"; };
+		77E0ABA91EB8E2DA00A2D626 /* DUserStoreObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUserStoreObject.m; sourceTree = "<group>"; };
+		77E0ABAC1EB905DC00A2D626 /* NSString+EmailAddresses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EmailAddresses.h"; sourceTree = "<group>"; };
+		77E0ABAD1EB905DC00A2D626 /* NSString+EmailAddresses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EmailAddresses.m"; sourceTree = "<group>"; };
+		8F90E52B0B6AB8E2B77E9D41 /* Pods-DoofApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoofApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoofApp/Pods-DoofApp.release.xcconfig"; sourceTree = "<group>"; };
+		A54D710A7C69B09E6FA20863 /* libPods-DoofAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoofAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9F3C8D837EB185DA9286BD0 /* Pods-DoofAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoofAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoofAppTests/Pods-DoofAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E2617B12E5292C3BEC74D35A /* Pods-DoofAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoofAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoofAppUITests/Pods-DoofAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E2698444C6C0E4909AF13643 /* Pods-DoofAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoofAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoofAppUITests/Pods-DoofAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EFF91C5EE1233A824B252E19 /* Pods-DoofApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoofApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoofApp/Pods-DoofApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77E0AB661EB8CFE300A2D626 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F782F09597D118D9AE48EB69 /* libPods-DoofApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77E0AB7F1EB8CFE300A2D626 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81CCDC536B29E490F3B84CC9 /* libPods-DoofAppTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77E0AB8A1EB8CFE300A2D626 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE4EDC799862DBD004A9CFF /* libPods-DoofAppUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FEC91C8C61695C0ADB08874 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65A937C61363373E59322094 /* libPods-DoofApp.a */,
+				06E9AF48DDABF6518D61BD1D /* libPods-DoofAppTests.a */,
+				A54D710A7C69B09E6FA20863 /* libPods-DoofAppUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77E0AB601EB8CFE200A2D626 = {
+			isa = PBXGroup;
+			children = (
+				77E0AB6B1EB8CFE300A2D626 /* DoofApp */,
+				77E0AB851EB8CFE300A2D626 /* DoofAppTests */,
+				77E0AB901EB8CFE300A2D626 /* DoofAppUITests */,
+				77E0AB6A1EB8CFE300A2D626 /* Products */,
+				BA87569E5C69AEDFEB7B8DD2 /* Pods */,
+				4FEC91C8C61695C0ADB08874 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		77E0AB6A1EB8CFE300A2D626 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77E0AB691EB8CFE300A2D626 /* DoofApp.app */,
+				77E0AB821EB8CFE300A2D626 /* DoofAppTests.xctest */,
+				77E0AB8D1EB8CFE300A2D626 /* DoofAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77E0AB6B1EB8CFE300A2D626 /* DoofApp */ = {
+			isa = PBXGroup;
+			children = (
+				77E0ABA61EB8DE6000A2D626 /* DoofApp.entitlements */,
+				77E0AB6F1EB8CFE300A2D626 /* AppDelegate.h */,
+				77E0AB701EB8CFE300A2D626 /* AppDelegate.m */,
+				77E0ABAB1EB905C100A2D626 /* External Classes */,
+				77E0ABA71EB8E1D400A2D626 /* Models */,
+				77E0AB9F1EB8D0F400A2D626 /* DVideoController.h */,
+				77E0ABA01EB8D0F400A2D626 /* DVideoController.m */,
+				77E0AB751EB8CFE300A2D626 /* Main.storyboard */,
+				77E0AB781EB8CFE300A2D626 /* Assets.xcassets */,
+				77E0AB7A1EB8CFE300A2D626 /* LaunchScreen.storyboard */,
+				77E0AB7D1EB8CFE300A2D626 /* Info.plist */,
+				77E0ABA51EB8D6E200A2D626 /* DContstants.h */,
+				77E0AB6C1EB8CFE300A2D626 /* Supporting Files */,
+			);
+			path = DoofApp;
+			sourceTree = "<group>";
+		};
+		77E0AB6C1EB8CFE300A2D626 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77E0AB6D1EB8CFE300A2D626 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77E0AB851EB8CFE300A2D626 /* DoofAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				77E0AB861EB8CFE300A2D626 /* DoofAppTests.m */,
+				77E0AB881EB8CFE300A2D626 /* Info.plist */,
+			);
+			path = DoofAppTests;
+			sourceTree = "<group>";
+		};
+		77E0AB901EB8CFE300A2D626 /* DoofAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				77E0AB911EB8CFE300A2D626 /* DoofAppUITests.m */,
+				77E0AB931EB8CFE300A2D626 /* Info.plist */,
+			);
+			path = DoofAppUITests;
+			sourceTree = "<group>";
+		};
+		77E0ABA71EB8E1D400A2D626 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				77E0ABA21EB8D6CD00A2D626 /* DVideoObject.h */,
+				77E0ABA31EB8D6CD00A2D626 /* DVideoObject.m */,
+				77E0ABA81EB8E2DA00A2D626 /* DUserStoreObject.h */,
+				77E0ABA91EB8E2DA00A2D626 /* DUserStoreObject.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		77E0ABAB1EB905C100A2D626 /* External Classes */ = {
+			isa = PBXGroup;
+			children = (
+				77E0ABAC1EB905DC00A2D626 /* NSString+EmailAddresses.h */,
+				77E0ABAD1EB905DC00A2D626 /* NSString+EmailAddresses.m */,
+			);
+			name = "External Classes";
+			sourceTree = "<group>";
+		};
+		BA87569E5C69AEDFEB7B8DD2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFF91C5EE1233A824B252E19 /* Pods-DoofApp.debug.xcconfig */,
+				8F90E52B0B6AB8E2B77E9D41 /* Pods-DoofApp.release.xcconfig */,
+				D9F3C8D837EB185DA9286BD0 /* Pods-DoofAppTests.debug.xcconfig */,
+				228651A8C1BE9A40E281EE33 /* Pods-DoofAppTests.release.xcconfig */,
+				E2698444C6C0E4909AF13643 /* Pods-DoofAppUITests.debug.xcconfig */,
+				E2617B12E5292C3BEC74D35A /* Pods-DoofAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77E0AB681EB8CFE300A2D626 /* DoofApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77E0AB961EB8CFE300A2D626 /* Build configuration list for PBXNativeTarget "DoofApp" */;
+			buildPhases = (
+				14B1CCA28F01A7B9FAF09FE8 /* [CP] Check Pods Manifest.lock */,
+				77E0AB651EB8CFE300A2D626 /* Sources */,
+				77E0AB661EB8CFE300A2D626 /* Frameworks */,
+				77E0AB671EB8CFE300A2D626 /* Resources */,
+				58F08EE35CE5FB34AF240F2B /* [CP] Embed Pods Frameworks */,
+				8B5CC211A278137F6D827056 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoofApp;
+			productName = DoofApp;
+			productReference = 77E0AB691EB8CFE300A2D626 /* DoofApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77E0AB811EB8CFE300A2D626 /* DoofAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77E0AB991EB8CFE300A2D626 /* Build configuration list for PBXNativeTarget "DoofAppTests" */;
+			buildPhases = (
+				961C8FC93CC574E948084887 /* [CP] Check Pods Manifest.lock */,
+				77E0AB7E1EB8CFE300A2D626 /* Sources */,
+				77E0AB7F1EB8CFE300A2D626 /* Frameworks */,
+				77E0AB801EB8CFE300A2D626 /* Resources */,
+				4E60698A483244DE4951FEE6 /* [CP] Embed Pods Frameworks */,
+				682A0249D0BBAFE676BE4298 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77E0AB841EB8CFE300A2D626 /* PBXTargetDependency */,
+			);
+			name = DoofAppTests;
+			productName = DoofAppTests;
+			productReference = 77E0AB821EB8CFE300A2D626 /* DoofAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		77E0AB8C1EB8CFE300A2D626 /* DoofAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77E0AB9C1EB8CFE300A2D626 /* Build configuration list for PBXNativeTarget "DoofAppUITests" */;
+			buildPhases = (
+				9DA59E285E282FFAC5CD0D4D /* [CP] Check Pods Manifest.lock */,
+				77E0AB891EB8CFE300A2D626 /* Sources */,
+				77E0AB8A1EB8CFE300A2D626 /* Frameworks */,
+				77E0AB8B1EB8CFE300A2D626 /* Resources */,
+				3C22E25A04D1FE33C1185DBA /* [CP] Embed Pods Frameworks */,
+				C80BE83AE0B6762F0F2F8FDB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77E0AB8F1EB8CFE300A2D626 /* PBXTargetDependency */,
+			);
+			name = DoofAppUITests;
+			productName = DoofAppUITests;
+			productReference = 77E0AB8D1EB8CFE300A2D626 /* DoofAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77E0AB611EB8CFE200A2D626 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = D;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = NorthernSpark;
+				TargetAttributes = {
+					77E0AB681EB8CFE300A2D626 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = NV488MSHMX;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					77E0AB811EB8CFE300A2D626 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = NV488MSHMX;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 77E0AB681EB8CFE300A2D626;
+					};
+					77E0AB8C1EB8CFE300A2D626 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = NV488MSHMX;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 77E0AB681EB8CFE300A2D626;
+					};
+				};
+			};
+			buildConfigurationList = 77E0AB641EB8CFE200A2D626 /* Build configuration list for PBXProject "DoofApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77E0AB601EB8CFE200A2D626;
+			productRefGroup = 77E0AB6A1EB8CFE300A2D626 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77E0AB681EB8CFE300A2D626 /* DoofApp */,
+				77E0AB811EB8CFE300A2D626 /* DoofAppTests */,
+				77E0AB8C1EB8CFE300A2D626 /* DoofAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77E0AB671EB8CFE300A2D626 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77E0AB7C1EB8CFE300A2D626 /* LaunchScreen.storyboard in Resources */,
+				77E0AB791EB8CFE300A2D626 /* Assets.xcassets in Resources */,
+				77E0AB771EB8CFE300A2D626 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77E0AB801EB8CFE300A2D626 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77E0AB8B1EB8CFE300A2D626 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14B1CCA28F01A7B9FAF09FE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3C22E25A04D1FE33C1185DBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoofAppUITests/Pods-DoofAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E60698A483244DE4951FEE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoofAppTests/Pods-DoofAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58F08EE35CE5FB34AF240F2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoofApp/Pods-DoofApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		682A0249D0BBAFE676BE4298 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoofAppTests/Pods-DoofAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B5CC211A278137F6D827056 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoofApp/Pods-DoofApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		961C8FC93CC574E948084887 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9DA59E285E282FFAC5CD0D4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C80BE83AE0B6762F0F2F8FDB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoofAppUITests/Pods-DoofAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77E0AB651EB8CFE300A2D626 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77E0AB711EB8CFE300A2D626 /* AppDelegate.m in Sources */,
+				77E0ABAE1EB905DC00A2D626 /* NSString+EmailAddresses.m in Sources */,
+				77E0ABA11EB8D0F400A2D626 /* DVideoController.m in Sources */,
+				77E0ABAA1EB8E2DA00A2D626 /* DUserStoreObject.m in Sources */,
+				77E0AB6E1EB8CFE300A2D626 /* main.m in Sources */,
+				77E0ABA41EB8D6CD00A2D626 /* DVideoObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77E0AB7E1EB8CFE300A2D626 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77E0AB871EB8CFE300A2D626 /* DoofAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77E0AB891EB8CFE300A2D626 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77E0AB921EB8CFE300A2D626 /* DoofAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77E0AB841EB8CFE300A2D626 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77E0AB681EB8CFE300A2D626 /* DoofApp */;
+			targetProxy = 77E0AB831EB8CFE300A2D626 /* PBXContainerItemProxy */;
+		};
+		77E0AB8F1EB8CFE300A2D626 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77E0AB681EB8CFE300A2D626 /* DoofApp */;
+			targetProxy = 77E0AB8E1EB8CFE300A2D626 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		77E0AB751EB8CFE300A2D626 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77E0AB761EB8CFE300A2D626 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		77E0AB7A1EB8CFE300A2D626 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77E0AB7B1EB8CFE300A2D626 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77E0AB941EB8CFE300A2D626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		77E0AB951EB8CFE300A2D626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77E0AB971EB8CFE300A2D626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFF91C5EE1233A824B252E19 /* Pods-DoofApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DoofApp/DoofApp.entitlements;
+				DEVELOPMENT_TEAM = NV488MSHMX;
+				INFOPLIST_FILE = DoofApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.northernspark.doofapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		77E0AB981EB8CFE300A2D626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F90E52B0B6AB8E2B77E9D41 /* Pods-DoofApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DoofApp/DoofApp.entitlements;
+				DEVELOPMENT_TEAM = NV488MSHMX;
+				INFOPLIST_FILE = DoofApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.northernspark.doofapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		77E0AB9A1EB8CFE300A2D626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9F3C8D837EB185DA9286BD0 /* Pods-DoofAppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = NV488MSHMX;
+				INFOPLIST_FILE = DoofAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.northernspark.doofapp.DoofAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoofApp.app/DoofApp";
+			};
+			name = Debug;
+		};
+		77E0AB9B1EB8CFE300A2D626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 228651A8C1BE9A40E281EE33 /* Pods-DoofAppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = NV488MSHMX;
+				INFOPLIST_FILE = DoofAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.northernspark.doofapp.DoofAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoofApp.app/DoofApp";
+			};
+			name = Release;
+		};
+		77E0AB9D1EB8CFE300A2D626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2698444C6C0E4909AF13643 /* Pods-DoofAppUITests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = NV488MSHMX;
+				INFOPLIST_FILE = DoofAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.northernspark.doofapp.DoofAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DoofApp;
+			};
+			name = Debug;
+		};
+		77E0AB9E1EB8CFE300A2D626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2617B12E5292C3BEC74D35A /* Pods-DoofAppUITests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = NV488MSHMX;
+				INFOPLIST_FILE = DoofAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.northernspark.doofapp.DoofAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DoofApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77E0AB641EB8CFE200A2D626 /* Build configuration list for PBXProject "DoofApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77E0AB941EB8CFE300A2D626 /* Debug */,
+				77E0AB951EB8CFE300A2D626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77E0AB961EB8CFE300A2D626 /* Build configuration list for PBXNativeTarget "DoofApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77E0AB971EB8CFE300A2D626 /* Debug */,
+				77E0AB981EB8CFE300A2D626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77E0AB991EB8CFE300A2D626 /* Build configuration list for PBXNativeTarget "DoofAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77E0AB9A1EB8CFE300A2D626 /* Debug */,
+				77E0AB9B1EB8CFE300A2D626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77E0AB9C1EB8CFE300A2D626 /* Build configuration list for PBXNativeTarget "DoofAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77E0AB9D1EB8CFE300A2D626 /* Debug */,
+				77E0AB9E1EB8CFE300A2D626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77E0AB611EB8CFE200A2D626 /* Project object */;
+}
