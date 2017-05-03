@@ -26,6 +26,7 @@
 -(void)setOnboardedData;
 -(void)setUserName:(NSString *)first last:(NSString *)last;
 -(void)setUserEmail:(NSString *)email;
+-(void)setDestroyCredentials;
 
 -(void)cloudSyncronize:(NSArray *)keys;
 -(NSDate *)cloudSyncronizedDate;

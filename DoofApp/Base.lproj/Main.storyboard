@@ -16,10 +16,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="QyH-mf-87h" kind="relationship" relationship="rootViewController" id="axL-Hn-K6M"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6A-OQ-wUA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138" y="89"/>
+        </scene>
+        <!--Video Controller-->
+        <scene sceneID="sWa-9d-zez">
+            <objects>
+                <viewController id="QyH-mf-87h" customClass="DVideoController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UxA-iO-EEA"/>
+                        <viewControllerLayoutGuide type="bottom" id="kzI-V3-LMH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MpM-Jb-OpG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ETc-16-hgv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VRH-MM-go9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942" y="89"/>
         </scene>
     </scenes>
 </document>

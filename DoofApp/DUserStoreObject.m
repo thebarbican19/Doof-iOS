@@ -87,11 +87,17 @@
     
 }
 
+-(void)setDestroyCredentials {
+    [self setUserEmail:nil];
+    [self setUserName:nil last:nil];
+
+}
+
 -(void)cloudSyncronize:(NSArray *)keys {
     if (keys != nil) {
         for (NSString *key in keys) {
             [self.cloud setObject:[self.data objectForKey:key] forKey:key];
-            if (self.logging) NSLog(@"Saving %@ to Cloud" ,key);
+            if (self.logging) NSLog(@"Saving %@ - %@ to Cloud" ,key ,[self.data objectForKey:key]);
 
         }
         
@@ -105,7 +111,7 @@
         NSLog(@"Syncronizing...");
         for (NSString *key in [self.cloud dictionaryRepresentation])  {
             [self.data setObject:[[self.data dictionaryRepresentation] objectForKey:key] forKey:key];
-            if (self.logging) NSLog(@"Saving %@ from Cloud" ,key);
+            if (self.logging) NSLog(@"Saving %@ - %@ from Cloud" ,key ,[[self.data dictionaryRepresentation] objectForKey:key]);
 
         }
         

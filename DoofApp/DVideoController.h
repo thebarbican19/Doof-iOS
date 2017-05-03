@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DVideoObject.h"
 
-@interface DVideoController : UIViewController
+@interface DVideoController : UIViewController <DVideoObjectDelegate>
+
+@property (nonatomic, strong) DVideoObject *video;
 
 @end

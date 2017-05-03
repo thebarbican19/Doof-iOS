@@ -15,11 +15,45 @@
 
 @implementation DVideoController
 
+-(void)viewWillAppear:(BOOL)animated {
+    [self setNeedsStatusBarAppearanceUpdate];
+
+}
+
 -(void)viewDidLoad {
     [super viewDidLoad];
     
+    self.video = [[DVideoObject alloc] init];
+    self.video.delegate = self;
     
+    self.view.backgroundColor = MAIN_BACKGROUND_COLOR;
+    self.navigationController.navigationBarHidden = true;
+    
+    NSLog(@"Videos: %@" ,self.video.videosStored);
+    
+}
 
+-(void)queryingVideos {
+    NSLog(@"Downloading...");
+    
+}
+
+-(void)queryingCompleteWithVideos {
+    
+}
+
+-(void)queryingReturnedErrors:(NSError *)error {
+    
+}
+
+-(BOOL)prefersStatusBarHidden {
+    return false;
+    
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+    
 }
 
 @end

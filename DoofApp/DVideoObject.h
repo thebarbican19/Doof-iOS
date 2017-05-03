@@ -8,11 +8,29 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol DVideoObjectDelegate;
 @interface DVideoObject : NSObject
 
+@property (nonatomic, strong) id <DVideoObjectDelegate> delegate;
 @property (nonatomic, strong) NSUserDefaults *data;
 @property (nonatomic, strong) NSURLSession *session;
 
--(void)queryVideosWithType:(NSString *)type completion:(void (^)(NSError *error, NSArray *videos))completion;
+-(void)queryVideosWithType:(NSString *)type;
+
+-(BOOL)videoExists:(NSString *)identfyer;
+-(NSMutableArray *)videosStored;
+-(NSMutableArray *)videosSaved;
+-(NSMutableArray *)videosWithType:(NSString *)type;
 
 @end
+
+@protocol DVideoObjectDelegate <NSObject>
+
+@optional
+
+-(void)queryingVideos;
+-(void)queryingCompleteWithVideos;
+-(void)queryingReturnedErrors:(NSError *)error;
+
+@end
+
