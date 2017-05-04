@@ -20,9 +20,13 @@
 #endif
 
 #define MAIN_BACKGROUND_COLOR NSColor(0x2B2A34)
+#define MAIN_OVERLAY_COLOR NSColor(0x100F1C)
 
 #define YOUTUBE_BASE @"https://www.googleapis.com/youtube/v3/"
 #define YOUTUBE_API_KEY @"AIzaSyAd1GZzG35p5d6UCUtpMK3ZngG8p3BAoHQ"
+#define YOUTUBE_IPHONE_USER_AGENT @"Mozilla/5.0 (iPhone; CPU iPhone OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3"
+#define YOUTUBE_WATCH_URL @"https://www.youtube.com/watch?v="
+#define YOUTUBE_VIDEO_EXTRACT_REGEX @"(?!\\\\\")http[^\"]*?itag=[^\"]*?(?=\\\\\")"
 
 #define APP_MIXPANEL_TOKEN @"fa41eb7bad08279a065d6dde32c45383"
 //#define APP_STORE_URL @"https://itunes.apple.com/us/app/all-hours/id1000983835?ls=1&mt=8"
@@ -33,4 +37,5 @@
 #define APP_DEVICE [[[UIDevice currentDevice] systemVersion] floatValue]
 #define APP_LANGUAGE [[NSLocale preferredLanguages] objectAtIndex:0]
 #define APP_DEVICE_NAME [[UIDevice currentDevice] name];
+#define APP_URL_TIMEOUT 15
 

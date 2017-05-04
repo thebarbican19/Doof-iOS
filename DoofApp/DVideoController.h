@@ -9,8 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "DVideoObject.h"
 
-@interface DVideoController : UIViewController <DVideoObjectDelegate>
+@interface DVideoController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, DVideoObjectDelegate>
 
 @property (nonatomic, strong) DVideoObject *video;
+@property (nonatomic, strong) IBOutlet UICollectionView *collection;
+@property (strong, nonatomic) IBOutlet UICollectionViewFlowLayout *layout;
+
+@property (nonatomic, strong) NSIndexPath *cell;
 
 @end

@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>HCYoutubeParser.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
 		<key>Mixpanel.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -34,6 +39,16 @@
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
+		<key>SAMLabel.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>UIImage+ImageWithColor.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -42,6 +57,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>037250FBF85F322A6F2592925E449FA0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>14F25AC0068FD412A740433DE94605E7</key>
 		<dict>
 			<key>primary</key>
@@ -52,7 +72,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>2579D6BB2CCB4D385511B8CEC5DA19A1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>31DBF7881BE03FB1036DB3D7DF27C75C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>57737368252131208A302E1A30D2BDE2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>69BDBFE246DF9C66F11113A44FD002AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>705EDC1155914D7886A78E248524C3DD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +102,42 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>752C3F7F1837084346A0425910683658</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>77E7357B22508DAC51D54FBC514E9062</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>86B4295760C5B114DD4E9457C7C2C6F9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8C7495270715F6DD0BCDC2FA2951D584</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AEE3D8A41A9483C128DADEE327DF9721</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>AF7164686F77D2224C47FD0196802249</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BC2C9EFC23E365C9BF520037F223549D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CC946654AB563F88DEFD18E59125A6EC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

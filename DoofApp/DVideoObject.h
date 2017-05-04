@@ -21,6 +21,7 @@
 -(NSMutableArray *)videosStored;
 -(NSMutableArray *)videosSaved;
 -(NSMutableArray *)videosWithType:(NSString *)type;
+-(void)videoCacheDestroy;
 
 @end
 

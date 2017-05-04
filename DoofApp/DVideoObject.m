@@ -69,7 +69,7 @@
             }
             else {
                 if ([self.delegate respondsToSelector:@selector(queryingReturnedErrors:)]) {
-                    [self.delegate queryingReturnedErrors:nil];
+                    [self.delegate queryingReturnedErrors:[NSError errorWithDomain:[NSString stringWithFormat:@"There are no more %@ videos at this time" ,type] code:400 userInfo:nil]];
                     
                 }
                 
@@ -88,7 +88,7 @@
     
     [task resume];
     
-    if ([self.delegate respondsToSelector:@selector(queryingVideos:)]) {
+    if ([self.delegate respondsToSelector:@selector(queryingVideos)]) {
         [self.delegate queryingVideos];
         
     }
@@ -116,6 +116,12 @@
 -(NSMutableArray *)videosWithType:(NSString *)type {
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"type CONTAINS %@" ,type];
     return [[self.videosStored filteredArrayUsingPredicate:predicate] mutableCopy];
+    
+}
+
+-(void)videoCacheDestroy {
+    [self.data setObject:[NSArray array] forKey:@"video_cache"];
+    [self.data synchronize];
     
 }
 

@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77915C5C1EBA00F400FAC370 /* DVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77915C5B1EBA00F400FAC370 /* DVideoCell.m */; };
+		77915C631EBA1E7600FAC370 /* Cabin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77915C601EBA1E7600FAC370 /* Cabin-Regular.ttf */; };
+		77915C6E1EBB89FA00FAC370 /* Cabin-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77915C6B1EBB89FA00FAC370 /* Cabin-BoldItalic.ttf */; };
+		77915C6F1EBB89FA00FAC370 /* Cabin-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77915C6C1EBB89FA00FAC370 /* Cabin-MediumItalic.ttf */; };
+		77915C711EBB8F8F00FAC370 /* Cabin-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77915C701EBB8F8F00FAC370 /* Cabin-Bold.ttf */; };
+		77915C741EBB8FB100FAC370 /* Cabin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77915C731EBB8FB100FAC370 /* Cabin-Medium.ttf */; };
+		77915C761EBB9A6C00FAC370 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77915C751EBB9A6C00FAC370 /* AVFoundation.framework */; };
+		77915C781EBB9A7000FAC370 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77915C771EBB9A7000FAC370 /* AVKit.framework */; };
+		77915C7A1EBB9DA100FAC370 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77915C791EBB9DA100FAC370 /* MediaPlayer.framework */; };
+		77915C7C1EBB9DAB00FAC370 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77915C7B1EBB9DAB00FAC370 /* QuartzCore.framework */; };
+		77915C861EBBA11900FAC370 /* DaiYoutubeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 77915C7F1EBBA11900FAC370 /* DaiYoutubeParser.m */; };
+		77915C871EBBA11900FAC370 /* DaiYoutubeParserOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 77915C821EBBA11900FAC370 /* DaiYoutubeParserOperation.m */; };
+		77915C881EBBA11900FAC370 /* DaiYoutubeParserWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77915C841EBBA11900FAC370 /* DaiYoutubeParserWebView.m */; };
+		77915C891EBBA11900FAC370 /* YoutubeParserBridge.html in Resources */ = {isa = PBXBuildFile; fileRef = 77915C851EBBA11900FAC370 /* YoutubeParserBridge.html */; };
 		77E0AB6E1EB8CFE300A2D626 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E0AB6D1EB8CFE300A2D626 /* main.m */; };
 		77E0AB711EB8CFE300A2D626 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E0AB701EB8CFE300A2D626 /* AppDelegate.m */; };
 		77E0AB771EB8CFE300A2D626 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77E0AB751EB8CFE300A2D626 /* Main.storyboard */; };
@@ -44,6 +58,25 @@
 		06E9AF48DDABF6518D61BD1D /* libPods-DoofAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoofAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		228651A8C1BE9A40E281EE33 /* Pods-DoofAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoofAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoofAppTests/Pods-DoofAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		65A937C61363373E59322094 /* libPods-DoofApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoofApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77915C5A1EBA00F400FAC370 /* DVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVideoCell.h; sourceTree = "<group>"; };
+		77915C5B1EBA00F400FAC370 /* DVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVideoCell.m; sourceTree = "<group>"; };
+		77915C601EBA1E7600FAC370 /* Cabin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Regular.ttf"; sourceTree = "<group>"; };
+		77915C6B1EBB89FA00FAC370 /* Cabin-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-BoldItalic.ttf"; sourceTree = "<group>"; };
+		77915C6C1EBB89FA00FAC370 /* Cabin-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-MediumItalic.ttf"; sourceTree = "<group>"; };
+		77915C701EBB8F8F00FAC370 /* Cabin-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Bold.ttf"; sourceTree = "<group>"; };
+		77915C731EBB8FB100FAC370 /* Cabin-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Medium.ttf"; sourceTree = "<group>"; };
+		77915C751EBB9A6C00FAC370 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		77915C771EBB9A7000FAC370 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		77915C791EBB9DA100FAC370 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		77915C7B1EBB9DAB00FAC370 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		77915C7E1EBBA11900FAC370 /* DaiYoutubeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaiYoutubeParser.h; sourceTree = "<group>"; };
+		77915C7F1EBBA11900FAC370 /* DaiYoutubeParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaiYoutubeParser.m; sourceTree = "<group>"; };
+		77915C801EBBA11900FAC370 /* DaiYoutubeParserDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaiYoutubeParserDefine.h; sourceTree = "<group>"; };
+		77915C811EBBA11900FAC370 /* DaiYoutubeParserOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaiYoutubeParserOperation.h; sourceTree = "<group>"; };
+		77915C821EBBA11900FAC370 /* DaiYoutubeParserOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaiYoutubeParserOperation.m; sourceTree = "<group>"; };
+		77915C831EBBA11900FAC370 /* DaiYoutubeParserWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaiYoutubeParserWebView.h; sourceTree = "<group>"; };
+		77915C841EBBA11900FAC370 /* DaiYoutubeParserWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaiYoutubeParserWebView.m; sourceTree = "<group>"; };
+		77915C851EBBA11900FAC370 /* YoutubeParserBridge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = YoutubeParserBridge.html; sourceTree = "<group>"; };
 		77E0AB691EB8CFE300A2D626 /* DoofApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoofApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77E0AB6D1EB8CFE300A2D626 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77E0AB6F1EB8CFE300A2D626 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,6 +114,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77915C7C1EBB9DAB00FAC370 /* QuartzCore.framework in Frameworks */,
+				77915C7A1EBB9DA100FAC370 /* MediaPlayer.framework in Frameworks */,
+				77915C781EBB9A7000FAC370 /* AVKit.framework in Frameworks */,
+				77915C761EBB9A6C00FAC370 /* AVFoundation.framework in Frameworks */,
 				F782F09597D118D9AE48EB69 /* libPods-DoofApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,11 +144,59 @@
 		4FEC91C8C61695C0ADB08874 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				77915C7B1EBB9DAB00FAC370 /* QuartzCore.framework */,
+				77915C791EBB9DA100FAC370 /* MediaPlayer.framework */,
+				77915C771EBB9A7000FAC370 /* AVKit.framework */,
+				77915C751EBB9A6C00FAC370 /* AVFoundation.framework */,
 				65A937C61363373E59322094 /* libPods-DoofApp.a */,
 				06E9AF48DDABF6518D61BD1D /* libPods-DoofAppTests.a */,
 				A54D710A7C69B09E6FA20863 /* libPods-DoofAppUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77915C581EBA00D100FAC370 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				77915C591EBA00DB00FAC370 /* Cells */,
+			);
+			name = Subviews;
+			sourceTree = "<group>";
+		};
+		77915C591EBA00DB00FAC370 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				77915C5A1EBA00F400FAC370 /* DVideoCell.h */,
+				77915C5B1EBA00F400FAC370 /* DVideoCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		77915C5D1EBA1E6900FAC370 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				77915C731EBB8FB100FAC370 /* Cabin-Medium.ttf */,
+				77915C701EBB8F8F00FAC370 /* Cabin-Bold.ttf */,
+				77915C601EBA1E7600FAC370 /* Cabin-Regular.ttf */,
+				77915C6B1EBB89FA00FAC370 /* Cabin-BoldItalic.ttf */,
+				77915C6C1EBB89FA00FAC370 /* Cabin-MediumItalic.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		77915C7D1EBBA10200FAC370 /* Youtube Parser */ = {
+			isa = PBXGroup;
+			children = (
+				77915C7E1EBBA11900FAC370 /* DaiYoutubeParser.h */,
+				77915C7F1EBBA11900FAC370 /* DaiYoutubeParser.m */,
+				77915C801EBBA11900FAC370 /* DaiYoutubeParserDefine.h */,
+				77915C811EBBA11900FAC370 /* DaiYoutubeParserOperation.h */,
+				77915C821EBBA11900FAC370 /* DaiYoutubeParserOperation.m */,
+				77915C831EBBA11900FAC370 /* DaiYoutubeParserWebView.h */,
+				77915C841EBBA11900FAC370 /* DaiYoutubeParserWebView.m */,
+				77915C851EBBA11900FAC370 /* YoutubeParserBridge.html */,
+			);
+			name = "Youtube Parser";
 			sourceTree = "<group>";
 		};
 		77E0AB601EB8CFE200A2D626 = {
@@ -142,8 +227,10 @@
 				77E0ABA61EB8DE6000A2D626 /* DoofApp.entitlements */,
 				77E0AB6F1EB8CFE300A2D626 /* AppDelegate.h */,
 				77E0AB701EB8CFE300A2D626 /* AppDelegate.m */,
+				77915C5D1EBA1E6900FAC370 /* Fonts */,
 				77E0ABAB1EB905C100A2D626 /* External Classes */,
 				77E0ABA71EB8E1D400A2D626 /* Models */,
+				77915C581EBA00D100FAC370 /* Subviews */,
 				77E0AB9F1EB8D0F400A2D626 /* DVideoController.h */,
 				77E0ABA01EB8D0F400A2D626 /* DVideoController.m */,
 				77E0AB751EB8CFE300A2D626 /* Main.storyboard */,
@@ -196,6 +283,7 @@
 		77E0ABAB1EB905C100A2D626 /* External Classes */ = {
 			isa = PBXGroup;
 			children = (
+				77915C7D1EBBA10200FAC370 /* Youtube Parser */,
 				77E0ABAC1EB905DC00A2D626 /* NSString+EmailAddresses.h */,
 				77E0ABAD1EB905DC00A2D626 /* NSString+EmailAddresses.m */,
 			);
@@ -344,7 +432,13 @@
 			files = (
 				77E0AB7C1EB8CFE300A2D626 /* LaunchScreen.storyboard in Resources */,
 				77E0AB791EB8CFE300A2D626 /* Assets.xcassets in Resources */,
+				77915C711EBB8F8F00FAC370 /* Cabin-Bold.ttf in Resources */,
+				77915C6F1EBB89FA00FAC370 /* Cabin-MediumItalic.ttf in Resources */,
+				77915C6E1EBB89FA00FAC370 /* Cabin-BoldItalic.ttf in Resources */,
+				77915C891EBBA11900FAC370 /* YoutubeParserBridge.html in Resources */,
 				77E0AB771EB8CFE300A2D626 /* Main.storyboard in Resources */,
+				77915C631EBA1E7600FAC370 /* Cabin-Regular.ttf in Resources */,
+				77915C741EBB8FB100FAC370 /* Cabin-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,8 +603,12 @@
 			files = (
 				77E0AB711EB8CFE300A2D626 /* AppDelegate.m in Sources */,
 				77E0ABAE1EB905DC00A2D626 /* NSString+EmailAddresses.m in Sources */,
+				77915C5C1EBA00F400FAC370 /* DVideoCell.m in Sources */,
+				77915C871EBBA11900FAC370 /* DaiYoutubeParserOperation.m in Sources */,
 				77E0ABA11EB8D0F400A2D626 /* DVideoController.m in Sources */,
+				77915C881EBBA11900FAC370 /* DaiYoutubeParserWebView.m in Sources */,
 				77E0ABAA1EB8E2DA00A2D626 /* DUserStoreObject.m in Sources */,
+				77915C861EBBA11900FAC370 /* DaiYoutubeParser.m in Sources */,
 				77E0AB6E1EB8CFE300A2D626 /* main.m in Sources */,
 				77E0ABA41EB8D6CD00A2D626 /* DVideoObject.m in Sources */,
 			);
