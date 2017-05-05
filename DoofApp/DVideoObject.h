@@ -14,14 +14,17 @@
 @property (nonatomic, strong) id <DVideoObjectDelegate> delegate;
 @property (nonatomic, strong) NSUserDefaults *data;
 @property (nonatomic, strong) NSURLSession *session;
+@property (nonatomic, assign) NSString *nextpage;
+@property (nonatomic, assign) int results;
 
--(void)queryVideosWithType:(NSString *)type;
+-(void)queryVideosWithType:(NSString *)type force:(BOOL)force;
 
 -(BOOL)videoExists:(NSString *)identfyer;
 -(NSMutableArray *)videosStored;
 -(NSMutableArray *)videosSaved;
 -(NSMutableArray *)videosWithType:(NSString *)type;
 -(void)videoCacheDestroy;
+-(BOOL)videoCacheExpired;
 
 @end
 

@@ -39,6 +39,11 @@
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
+		<key>Reachability.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
 		<key>SAMLabel.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -67,6 +72,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>19767DE9339A18B37D38BA96D6B95912</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>23DB2A96ED04A7D2E072C27EA4B299C0</key>
 		<dict>
 			<key>primary</key>
@@ -77,7 +87,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>2F1113E4E75A304601B2140EBD76C135</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>31DBF7881BE03FB1036DB3D7DF27C75C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3653AC2BBC3529C51229D4E16EDD7788</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3B993C15E8B0C159067F7FEB93CB5F1D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -148,6 +173,11 @@
 			<true/>
 		</dict>
 		<key>E4369D56E02F9FDF8983C9DA630B972A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EDE13F4DADE890DBDB5636976E2DD432</key>
 		<dict>
 			<key>primary</key>
 			<true/>

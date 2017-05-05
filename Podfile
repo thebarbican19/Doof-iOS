@@ -11,6 +11,7 @@ target 'DoofApp' do
   pod 'Mixpanel'
   pod 'UIImage+ImageWithColor'
   pod 'BLMultiColorLoader'
+  pod 'Reachability'
    
   target 'DoofAppTests' do
     inherit! :search_paths

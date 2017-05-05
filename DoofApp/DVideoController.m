@@ -7,7 +7,6 @@
 //
 
 #import "DVideoController.h"
-#import "DVideoCell.h"
 #import "DContstants.h"
 
 @interface DVideoController ()
@@ -45,10 +44,16 @@
     self.collection.dataSource = self;
     [self.collection registerClass:[DVideoCell class] forCellWithReuseIdentifier:@"video"];
     [self.view addSubview:self.collection];
-    
-    //[self.video videoCacheDestroy];
-    //[self.video queryVideosWithType:@"cute+animals"];
-    
+        
+}
+
+-(void)viewPlayNextVideo:(DVideoCell *)content {
+    [self scrollViewDidEndDecelerating:self.collection];
+    [UIView animateWithDuration:0.5 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        [self.collection scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:content.index.row + 1 inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:false];
+        
+    } completion:nil];
+
 }
 
 -(void)queryingVideos {
@@ -84,11 +89,11 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     DVideoCell *cell = (DVideoCell *)[self.collection dequeueReusableCellWithReuseIdentifier:@"video" forIndexPath:indexPath];
-    
 
     if (indexPath.row >= self.video.videosStored.count) [cell loading:true];
     else [cell setup:[self.video.videosStored objectAtIndex:indexPath.row] index:indexPath];
 
+    [cell setDelegate:self];
     [cell.contentView setBackgroundColor:[UIColor blackColor]];
     [cell.contentView setClipsToBounds:true];
     [cell.contentView.layer setCornerRadius:1];
@@ -104,12 +109,11 @@
         
     }
 
-
 }
 
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    NSLog(@"Position: %f" ,scrollView.contentOffset.x);
     for (NSIndexPath *index in [self.collection indexPathsForVisibleItems]) {
-        NSLog(@"Index Called %@ Set Cell %@" ,index ,self.cell)
         DVideoCell *cell = (DVideoCell *)[self.collection cellForItemAtIndexPath:index];
         if (cell.loading == false) {
             if (self.cell.row != index.row) [cell play];
@@ -120,8 +124,7 @@
         }
         else {
             [cell stop];
-            [self.video queryVideosWithType:@"cute+animals"];
-            //ADD PAGE NUMBER
+            [self.video queryVideosWithType:@"cute,animals,puppies" force:true];
             //STOP MULTIPLE CALLS TO YOUTUBE IF SCROLLED
             
         }

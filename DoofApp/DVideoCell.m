@@ -106,14 +106,25 @@
         [self.player.player play];
         [self.player.player setMuted:false];
         
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(status) userInfo:nil repeats:true];
+       
     }
 
 }
 
 -(void)stop {
-    [self.player setPlayer:nil];
     [self.player.player pause];
+    [self.player setPlayer:nil];
     
+}
+
+-(void)status {
+    if (CMTimeGetSeconds(self.player.player.currentItem.currentTime) >= CMTimeGetSeconds(self.player.player.currentItem.duration)) {
+        [self.timer invalidate];
+        [self.delegate viewPlayNextVideo:self];
+        
+    }
+
 }
 
 -(NSAttributedString *)format:(NSString *)title description:(NSString *)description {
@@ -123,6 +134,20 @@
     [attribute addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithWhite:1.0 alpha:0.8] range:NSMakeRange(title.length, description.length + 1)];
 
     return attribute;
+    
+}
+
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    NSLog(@"Key Path: %@" ,keyPath);
+    if ([keyPath isEqualToString:@"status"]) {
+        
+    }
+    
+}
+
+-(void)dealloc {
+    [self stop];
+
     
 }
 

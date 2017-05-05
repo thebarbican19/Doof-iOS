@@ -23,7 +23,6 @@
         self.user = [[DUserStoreObject alloc] init];
         self.user.logging = true;
         
-        self.mixpanel = [Mixpanel sharedInstance];
     
     }
     return self;
@@ -33,20 +32,20 @@
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [Fabric with:@[[Crashlytics class]]];
     
-    [Mixpanel sharedInstanceWithToken:APP_MIXPANEL_TOKEN];
-
+    if (!APP_DEBUG_MODE) [Mixpanel sharedInstanceWithToken:APP_MIXPANEL_TOKEN];
+    
     [self.user cloudSyncronize:nil];
-
+    
     if (self.user.userDeviceIdentifyer == nil) {
         [self.user setDeviceIdentifyer];
         
-        [self.mixpanel identify:self.user.userDeviceIdentifyer];
-        [self.mixpanel createAlias:[UIDevice currentDevice].name forDistinctID:self.user.userDeviceIdentifyer];
-        [self.mixpanel track:@"App Installed"];
+        [[Mixpanel sharedInstance] identify:self.user.userDeviceIdentifyer];
+        [[Mixpanel sharedInstance] track:@"App Installed"];
+        [[Mixpanel sharedInstance].people set:@{@"Device":[UIDevice currentDevice].name}];
         
     }
     else {
-        [self.mixpanel track:@"App Opened"];
+        [[Mixpanel sharedInstance] track:@"App Opened"];
 
     }
     
@@ -79,6 +78,7 @@
 
 -(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     [[Mixpanel sharedInstance].people addPushDeviceToken:deviceToken];
+    [[Mixpanel sharedInstance] track:@"Push Notifications Registered"];
     
 }
 

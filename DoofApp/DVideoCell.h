@@ -15,8 +15,10 @@
 #import "SAMLabel.h"
 #import "DaiYoutubeParser.h"
 
+@protocol DVideoCellDelegate;
 @interface DVideoCell : UICollectionViewCell
 
+@property (nonatomic, strong) id <DVideoCellDelegate> delegate;
 @property (nonatomic, strong) IBOutlet UIImageView *background;
 @property (nonatomic, strong) IBOutlet UIView *overlay;
 @property (nonatomic, strong) IBOutlet SAMLabel *label;
@@ -26,6 +28,7 @@
 @property (nonatomic, strong) NSDictionary *item;
 @property (nonatomic, assign) BOOL loading;
 @property (nonatomic, assign) NSIndexPath *index;
+@property (nonatomic, assign) NSTimer *timer;
 
 -(void)setup:(NSDictionary *)item index:(NSIndexPath *)index;
 -(void)download:(NSString *)key autoplay:(BOOL)autoplay;
@@ -34,3 +37,12 @@
 -(void)stop;
 
 @end
+
+@protocol DVideoCellDelegate <NSObject>
+
+@optional
+
+-(void)viewPlayNextVideo:(DVideoCell *)content;
+
+@end
+

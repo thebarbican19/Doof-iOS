@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '86B4295760C5B114DD4E9457C7C2C6F9'
-               BlueprintName = 'HCYoutubeParser'
+               BlueprintIdentifier = '2F1113E4E75A304601B2140EBD76C135'
+               BlueprintName = 'Reachability'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libHCYoutubeParser.a'>
+               BuildableName = 'libReachability.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
