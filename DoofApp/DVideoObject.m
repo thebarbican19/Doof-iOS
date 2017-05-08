@@ -27,14 +27,13 @@
     if (self.results == 0) self.results = 15;
     if (self.videoCacheExpired || force) {
         NSString *pagenation = self.nextpage==nil?@"":[NSString stringWithFormat:@"&pageToken=%@" ,self.nextpage];
-        NSMutableArray *cache = self.videosStored;
+        NSMutableArray *cache = self.videosDownloaded;
         NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@search?part=snippet&order=date&safeSearch=moderate&key=%@&type=video&videoDuration=short&videoEmbeddable=true&maxResults=%d%@&q=%@", YOUTUBE_BASE, YOUTUBE_API_KEY ,self.results ,pagenation, type]];
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:APP_URL_TIMEOUT];
         [request setHTTPMethod:@"GET"];
         
         NSURLSessionDataTask *task = [self.session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
             NSHTTPURLResponse *status = (NSHTTPURLResponse *)response;
-            NSLog(@"Status Code: %d Error: %@ URL: %@" ,(int)status.statusCode ,error ,request);
             if (status.statusCode == 200) {
                 NSArray *items = [[NSJSONSerialization JSONObjectWithData:data options:0 error:nil] objectForKey:@"items"];
                 NSLog(@"Downloaded: %@" ,[NSJSONSerialization JSONObjectWithData:data options:0 error:nil]);
@@ -52,7 +51,7 @@
                             [newvid setObject:identifyer forKey:@"key"];
                             [newvid setObject:[snippet objectForKey:@"description"] forKey:@"description"];
                             [newvid setObject:[NSDate date] forKey:@"downloaded"];
-                            [newvid setObject:[NSNumber numberWithBool:false] forKey:@"saved"];
+                            [newvid setObject:[NSNumber numberWithBool:false] forKey:@"watched"];
                             [newvid setObject:[NSNumber numberWithBool:false] forKey:@"favorited"];
                             [newvid setObject:type forKey:@"type"];
 
@@ -119,7 +118,7 @@
     
 }
 
--(NSMutableArray *)videosStored {
+-(NSMutableArray *)videosDownloaded {
     if ([[self.data objectForKey:@"video_cache"] count] == 0) return [[NSMutableArray alloc] init];
     else return [[self.data objectForKey:@"video_cache"] mutableCopy];
  
@@ -127,27 +126,61 @@
                         
 -(BOOL)videoExists:(NSString *)identfyer {
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"key == %@" ,identfyer];
-    if ([[self.videosStored filteredArrayUsingPredicate:predicate] count] == 0) return false;
+    if ([[self.videosDownloaded filteredArrayUsingPredicate:predicate] count] == 0) return false;
     else return true;
     
 }
     
--(NSMutableArray *)videosSaved {
+-(NSMutableArray *)videosLiked {
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"favorited == 1"];
-    return [[self.videosStored filteredArrayUsingPredicate:predicate] mutableCopy];
+    return [[self.videosDownloaded filteredArrayUsingPredicate:predicate] mutableCopy];
+    
+}
+
+-(NSMutableArray *)videosUnwatched {
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"watched == 0"];
+    return [[self.videosDownloaded filteredArrayUsingPredicate:predicate] mutableCopy];
     
 }
 
 -(NSMutableArray *)videosWithType:(NSString *)type {
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"type CONTAINS %@" ,type];
-    return [[self.videosStored filteredArrayUsingPredicate:predicate] mutableCopy];
+    return [[self.videosDownloaded filteredArrayUsingPredicate:predicate] mutableCopy];
     
 }
 
--(void)videoCacheDestroy {
-    [self.data setObject:nil forKey:@"video_cache_timestamp"];
-    [self.data setObject:[NSArray array] forKey:@"video_cache"];
+-(void)videoLikeWithData:(BOOL)like item:(NSDictionary *)item {
+    NSMutableDictionary *updated = [[NSMutableDictionary alloc] initWithDictionary:item];
+    [updated setObject:[NSNumber numberWithBool:like] forKey:@"favorited"];
+    [updated setObject:[NSDate date] forKey:@"updated"];
+    
+    [self.videosDownloaded replaceObjectAtIndex:[self videoIndexFromData:item] withObject:updated];
+    
+    [self.data setObject:self.videosDownloaded forKey:@"video_cache"];
     [self.data synchronize];
+
+}
+
+-(void)videoWatchedWithData:(BOOL)watched item:(NSDictionary *)item {
+    NSMutableDictionary *updated = [[NSMutableDictionary alloc] initWithDictionary:item];
+    [updated setObject:[NSNumber numberWithBool:watched] forKey:@"watched"];
+    [updated setObject:[NSDate date] forKey:@"updated"];
+    
+    [self.videosDownloaded replaceObjectAtIndex:[self videoIndexFromData:item] withObject:updated];
+    
+    [self.data setObject:self.videosDownloaded forKey:@"video_cache"];
+    [self.data synchronize];
+    
+}
+
+-(NSInteger)videoIndexFromData:(NSDictionary *)data {
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"key CONTAINS %@" ,[data objectForKey:@"key"]];
+    NSUInteger index = [self.videosDownloaded indexOfObjectPassingTest:^(id obj, NSUInteger idx, BOOL *stop) {
+        return [predicate evaluateWithObject:obj];
+        
+    }];
+    
+    return index;
     
 }
 

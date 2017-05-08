@@ -9,13 +9,17 @@
 #import <UIKit/UIKit.h>
 #import "DVideoObject.h"
 #import "DVideoCell.h"
+#import "GDMainNavigation.h"
+#import "Mixpanel/Mixpanel.h"
 
-@interface DVideoController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, DVideoObjectDelegate, DVideoCellDelegate>
+@interface DVideoController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, DVideoObjectDelegate, DVideoCellDelegate, GDNavigationViewDelagate>
 
 @property (nonatomic, strong) DVideoObject *video;
 @property (nonatomic, strong) IBOutlet UICollectionView *collection;
-@property (strong, nonatomic) IBOutlet UICollectionViewFlowLayout *layout;
+@property (nonatomic, strong) IBOutlet UICollectionViewFlowLayout *layout;
+@property (nonatomic, strong) IBOutlet GDMainNavigation *navigation;
 
-@property (nonatomic, strong) NSIndexPath *cell;
+@property (nonatomic, assign) NSIndexPath *cell;
+@property (nonatomic, assign) BOOL statusbar;
 
 @end

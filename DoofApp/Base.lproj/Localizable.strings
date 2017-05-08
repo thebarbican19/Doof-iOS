@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  DoofApp
+
+  Created by Joe Barbour on 07/05/2017.
+  Copyright © 2017 NorthernSpark. All rights reserved.
+*/
+
+"VideoLoading_Title" = "Video Loading...";

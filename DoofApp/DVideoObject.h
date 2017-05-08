@@ -20,11 +20,13 @@
 -(void)queryVideosWithType:(NSString *)type force:(BOOL)force;
 
 -(BOOL)videoExists:(NSString *)identfyer;
--(NSMutableArray *)videosStored;
--(NSMutableArray *)videosSaved;
+-(NSMutableArray *)videosDownloaded;
+-(NSMutableArray *)videosLiked;
+-(NSMutableArray *)videosUnwatched;
 -(NSMutableArray *)videosWithType:(NSString *)type;
--(void)videoCacheDestroy;
 -(BOOL)videoCacheExpired;
+-(void)videoLikeWithData:(BOOL)like item:(NSDictionary *)item;
+-(void)videoWatchedWithData:(BOOL)watched item:(NSDictionary *)item;
 
 @end
 

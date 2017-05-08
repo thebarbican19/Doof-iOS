@@ -21,6 +21,10 @@
 
 #define MAIN_BACKGROUND_COLOR NSColor(0x2B2A34)
 #define MAIN_OVERLAY_COLOR NSColor(0x100F1C)
+#define MAIN_NAVIGATION_HEIGHT 74.0
+#define MAIN_NAVIGATION_MARGIN 18.0
+#define MAIN_NAVIGATION_BUTTONS_SIZE MAIN_NAVIGATION_HEIGHT - 25.5
+#define MAIN_STATUSBAR_HEIGHT [UIApplication sharedApplication].statusBarFrame.size.height
 
 #define YOUTUBE_BASE @"https://www.googleapis.com/youtube/v3/"
 #define YOUTUBE_API_KEY @"AIzaSyAd1GZzG35p5d6UCUtpMK3ZngG8p3BAoHQ"
@@ -28,6 +32,7 @@
 #define YOUTUBE_WATCH_URL @"https://www.youtube.com/watch?v="
 #define YOUTUBE_VIDEO_EXTRACT_REGEX @"(?!\\\\\")http[^\"]*?itag=[^\"]*?(?=\\\\\")"
 
+#define APP_DOWNLOAD_DIRECTORY [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
 #define APP_MIXPANEL_TOKEN @"fa41eb7bad08279a065d6dde32c45383"
 //#define APP_STORE_URL @"https://itunes.apple.com/us/app/all-hours/id1000983835?ls=1&mt=8"
 //#define APP_STORE_ID @"1000983835"

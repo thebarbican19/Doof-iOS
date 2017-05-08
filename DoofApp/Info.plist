@@ -50,14 +50,14 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSContactsUsageDescription</key>
-	<string>"Doof uses your contact information to allow you to quickly share awesome videos!"</string>
+	<string>&quot;Doof uses your contact information to allow you to quickly share awesome videos!&quot;</string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Cabin-BoldItalic.tff</string>
-		<string>Cabin-MediumItalic.ttf</string>
-		<string>Cabin-Regular.ttf</string>
-		<string>Cabin-Bold.ttf</string>
-		<string>Cabin-Medium.ttf</string>
+		<string>VentiCF-Black.otf</string>
+		<string>VentiCF-Bold.otf</string>
+		<string>VentiCF-DemiBold.otf</string>
+		<string>VentiCF-Light.otf</string>
+		<string>VentiCF-Medium.otf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

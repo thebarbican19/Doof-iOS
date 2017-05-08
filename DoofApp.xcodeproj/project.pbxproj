@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		773A301E1EBD57A500695ABB /* DShareObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 773A301D1EBD57A500695ABB /* DShareObject.m */; };
+		773A30211EBD57CC00695ABB /* DDownloadObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 773A30201EBD57CC00695ABB /* DDownloadObject.m */; };
+		773A30241EBE1AE000695ABB /* DHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 773A30231EBE1AE000695ABB /* DHomeController.m */; };
+		777A37621EBF5DCA007C9E17 /* VentiCF-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 777A375D1EBF5DCA007C9E17 /* VentiCF-Black.otf */; };
+		777A37631EBF5DCA007C9E17 /* VentiCF-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 777A375E1EBF5DCA007C9E17 /* VentiCF-Bold.otf */; };
+		777A37641EBF5DCA007C9E17 /* VentiCF-DemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 777A375F1EBF5DCA007C9E17 /* VentiCF-DemiBold.otf */; };
+		777A37651EBF5DCA007C9E17 /* VentiCF-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 777A37601EBF5DCA007C9E17 /* VentiCF-Light.otf */; };
+		777A37661EBF5DCA007C9E17 /* VentiCF-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 777A37611EBF5DCA007C9E17 /* VentiCF-Medium.otf */; };
+		777A37691EBF68AC007C9E17 /* GDVideoControls.m in Sources */ = {isa = PBXBuildFile; fileRef = 777A37681EBF68AC007C9E17 /* GDVideoControls.m */; };
+		777A376C1EBF68D9007C9E17 /* GDSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 777A376B1EBF68D9007C9E17 /* GDSlider.m */; };
+		777A376F1EBF6B36007C9E17 /* GDMainNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 777A376E1EBF6B36007C9E17 /* GDMainNavigation.m */; };
+		777A37721EBF9CED007C9E17 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 777A37741EBF9CED007C9E17 /* Localizable.strings */; };
 		77915C5C1EBA00F400FAC370 /* DVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77915C5B1EBA00F400FAC370 /* DVideoCell.m */; };
-		77915C631EBA1E7600FAC370 /* Cabin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77915C601EBA1E7600FAC370 /* Cabin-Regular.ttf */; };
-		77915C6E1EBB89FA00FAC370 /* Cabin-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77915C6B1EBB89FA00FAC370 /* Cabin-BoldItalic.ttf */; };
-		77915C6F1EBB89FA00FAC370 /* Cabin-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77915C6C1EBB89FA00FAC370 /* Cabin-MediumItalic.ttf */; };
-		77915C711EBB8F8F00FAC370 /* Cabin-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77915C701EBB8F8F00FAC370 /* Cabin-Bold.ttf */; };
-		77915C741EBB8FB100FAC370 /* Cabin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77915C731EBB8FB100FAC370 /* Cabin-Medium.ttf */; };
 		77915C761EBB9A6C00FAC370 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77915C751EBB9A6C00FAC370 /* AVFoundation.framework */; };
 		77915C781EBB9A7000FAC370 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77915C771EBB9A7000FAC370 /* AVKit.framework */; };
 		77915C7A1EBB9DA100FAC370 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77915C791EBB9DA100FAC370 /* MediaPlayer.framework */; };
@@ -58,13 +65,26 @@
 		06E9AF48DDABF6518D61BD1D /* libPods-DoofAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoofAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		228651A8C1BE9A40E281EE33 /* Pods-DoofAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoofAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoofAppTests/Pods-DoofAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		65A937C61363373E59322094 /* libPods-DoofApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DoofApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		773A301C1EBD57A500695ABB /* DShareObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DShareObject.h; sourceTree = "<group>"; };
+		773A301D1EBD57A500695ABB /* DShareObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DShareObject.m; sourceTree = "<group>"; };
+		773A301F1EBD57CC00695ABB /* DDownloadObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDownloadObject.h; sourceTree = "<group>"; };
+		773A30201EBD57CC00695ABB /* DDownloadObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDownloadObject.m; sourceTree = "<group>"; };
+		773A30221EBE1AE000695ABB /* DHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHomeController.h; sourceTree = "<group>"; };
+		773A30231EBE1AE000695ABB /* DHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHomeController.m; sourceTree = "<group>"; };
+		777A375D1EBF5DCA007C9E17 /* VentiCF-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VentiCF-Black.otf"; sourceTree = "<group>"; };
+		777A375E1EBF5DCA007C9E17 /* VentiCF-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VentiCF-Bold.otf"; sourceTree = "<group>"; };
+		777A375F1EBF5DCA007C9E17 /* VentiCF-DemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VentiCF-DemiBold.otf"; sourceTree = "<group>"; };
+		777A37601EBF5DCA007C9E17 /* VentiCF-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VentiCF-Light.otf"; sourceTree = "<group>"; };
+		777A37611EBF5DCA007C9E17 /* VentiCF-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VentiCF-Medium.otf"; sourceTree = "<group>"; };
+		777A37671EBF68AC007C9E17 /* GDVideoControls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDVideoControls.h; sourceTree = "<group>"; };
+		777A37681EBF68AC007C9E17 /* GDVideoControls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDVideoControls.m; sourceTree = "<group>"; };
+		777A376A1EBF68D9007C9E17 /* GDSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSlider.h; sourceTree = "<group>"; };
+		777A376B1EBF68D9007C9E17 /* GDSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDSlider.m; sourceTree = "<group>"; };
+		777A376D1EBF6B36007C9E17 /* GDMainNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDMainNavigation.h; sourceTree = "<group>"; };
+		777A376E1EBF6B36007C9E17 /* GDMainNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDMainNavigation.m; sourceTree = "<group>"; };
+		777A37731EBF9CED007C9E17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		77915C5A1EBA00F400FAC370 /* DVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVideoCell.h; sourceTree = "<group>"; };
 		77915C5B1EBA00F400FAC370 /* DVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVideoCell.m; sourceTree = "<group>"; };
-		77915C601EBA1E7600FAC370 /* Cabin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Regular.ttf"; sourceTree = "<group>"; };
-		77915C6B1EBB89FA00FAC370 /* Cabin-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-BoldItalic.ttf"; sourceTree = "<group>"; };
-		77915C6C1EBB89FA00FAC370 /* Cabin-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-MediumItalic.ttf"; sourceTree = "<group>"; };
-		77915C701EBB8F8F00FAC370 /* Cabin-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Bold.ttf"; sourceTree = "<group>"; };
-		77915C731EBB8FB100FAC370 /* Cabin-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Medium.ttf"; sourceTree = "<group>"; };
 		77915C751EBB9A6C00FAC370 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		77915C771EBB9A7000FAC370 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		77915C791EBB9DA100FAC370 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -175,11 +195,11 @@
 		77915C5D1EBA1E6900FAC370 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				77915C731EBB8FB100FAC370 /* Cabin-Medium.ttf */,
-				77915C701EBB8F8F00FAC370 /* Cabin-Bold.ttf */,
-				77915C601EBA1E7600FAC370 /* Cabin-Regular.ttf */,
-				77915C6B1EBB89FA00FAC370 /* Cabin-BoldItalic.ttf */,
-				77915C6C1EBB89FA00FAC370 /* Cabin-MediumItalic.ttf */,
+				777A375D1EBF5DCA007C9E17 /* VentiCF-Black.otf */,
+				777A375E1EBF5DCA007C9E17 /* VentiCF-Bold.otf */,
+				777A375F1EBF5DCA007C9E17 /* VentiCF-DemiBold.otf */,
+				777A37601EBF5DCA007C9E17 /* VentiCF-Light.otf */,
+				777A37611EBF5DCA007C9E17 /* VentiCF-Medium.otf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -233,11 +253,14 @@
 				77915C581EBA00D100FAC370 /* Subviews */,
 				77E0AB9F1EB8D0F400A2D626 /* DVideoController.h */,
 				77E0ABA01EB8D0F400A2D626 /* DVideoController.m */,
+				773A30221EBE1AE000695ABB /* DHomeController.h */,
+				773A30231EBE1AE000695ABB /* DHomeController.m */,
 				77E0AB751EB8CFE300A2D626 /* Main.storyboard */,
 				77E0AB781EB8CFE300A2D626 /* Assets.xcassets */,
 				77E0AB7A1EB8CFE300A2D626 /* LaunchScreen.storyboard */,
 				77E0AB7D1EB8CFE300A2D626 /* Info.plist */,
 				77E0ABA51EB8D6E200A2D626 /* DContstants.h */,
+				777A37741EBF9CED007C9E17 /* Localizable.strings */,
 				77E0AB6C1EB8CFE300A2D626 /* Supporting Files */,
 			);
 			path = DoofApp;
@@ -276,6 +299,10 @@
 				77E0ABA31EB8D6CD00A2D626 /* DVideoObject.m */,
 				77E0ABA81EB8E2DA00A2D626 /* DUserStoreObject.h */,
 				77E0ABA91EB8E2DA00A2D626 /* DUserStoreObject.m */,
+				773A301F1EBD57CC00695ABB /* DDownloadObject.h */,
+				773A30201EBD57CC00695ABB /* DDownloadObject.m */,
+				773A301C1EBD57A500695ABB /* DShareObject.h */,
+				773A301D1EBD57A500695ABB /* DShareObject.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -286,6 +313,12 @@
 				77915C7D1EBBA10200FAC370 /* Youtube Parser */,
 				77E0ABAC1EB905DC00A2D626 /* NSString+EmailAddresses.h */,
 				77E0ABAD1EB905DC00A2D626 /* NSString+EmailAddresses.m */,
+				777A37671EBF68AC007C9E17 /* GDVideoControls.h */,
+				777A37681EBF68AC007C9E17 /* GDVideoControls.m */,
+				777A376A1EBF68D9007C9E17 /* GDSlider.h */,
+				777A376B1EBF68D9007C9E17 /* GDSlider.m */,
+				777A376D1EBF6B36007C9E17 /* GDMainNavigation.h */,
+				777A376E1EBF6B36007C9E17 /* GDMainNavigation.m */,
 			);
 			name = "External Classes";
 			sourceTree = "<group>";
@@ -383,7 +416,13 @@
 						DevelopmentTeam = NV488MSHMX;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
 								enabled = 1;
 							};
 							com.apple.iCloud = {
@@ -432,13 +471,14 @@
 			files = (
 				77E0AB7C1EB8CFE300A2D626 /* LaunchScreen.storyboard in Resources */,
 				77E0AB791EB8CFE300A2D626 /* Assets.xcassets in Resources */,
-				77915C711EBB8F8F00FAC370 /* Cabin-Bold.ttf in Resources */,
-				77915C6F1EBB89FA00FAC370 /* Cabin-MediumItalic.ttf in Resources */,
-				77915C6E1EBB89FA00FAC370 /* Cabin-BoldItalic.ttf in Resources */,
+				777A37631EBF5DCA007C9E17 /* VentiCF-Bold.otf in Resources */,
+				777A37641EBF5DCA007C9E17 /* VentiCF-DemiBold.otf in Resources */,
+				777A37651EBF5DCA007C9E17 /* VentiCF-Light.otf in Resources */,
+				777A37721EBF9CED007C9E17 /* Localizable.strings in Resources */,
+				777A37621EBF5DCA007C9E17 /* VentiCF-Black.otf in Resources */,
 				77915C891EBBA11900FAC370 /* YoutubeParserBridge.html in Resources */,
+				777A37661EBF5DCA007C9E17 /* VentiCF-Medium.otf in Resources */,
 				77E0AB771EB8CFE300A2D626 /* Main.storyboard in Resources */,
-				77915C631EBA1E7600FAC370 /* Cabin-Regular.ttf in Resources */,
-				77915C741EBB8FB100FAC370 /* Cabin-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,12 +643,18 @@
 			files = (
 				77E0AB711EB8CFE300A2D626 /* AppDelegate.m in Sources */,
 				77E0ABAE1EB905DC00A2D626 /* NSString+EmailAddresses.m in Sources */,
+				773A301E1EBD57A500695ABB /* DShareObject.m in Sources */,
 				77915C5C1EBA00F400FAC370 /* DVideoCell.m in Sources */,
 				77915C871EBBA11900FAC370 /* DaiYoutubeParserOperation.m in Sources */,
 				77E0ABA11EB8D0F400A2D626 /* DVideoController.m in Sources */,
+				777A37691EBF68AC007C9E17 /* GDVideoControls.m in Sources */,
+				777A376C1EBF68D9007C9E17 /* GDSlider.m in Sources */,
+				773A30241EBE1AE000695ABB /* DHomeController.m in Sources */,
 				77915C881EBBA11900FAC370 /* DaiYoutubeParserWebView.m in Sources */,
+				773A30211EBD57CC00695ABB /* DDownloadObject.m in Sources */,
 				77E0ABAA1EB8E2DA00A2D626 /* DUserStoreObject.m in Sources */,
 				77915C861EBBA11900FAC370 /* DaiYoutubeParser.m in Sources */,
+				777A376F1EBF6B36007C9E17 /* GDMainNavigation.m in Sources */,
 				77E0AB6E1EB8CFE300A2D626 /* main.m in Sources */,
 				77E0ABA41EB8D6CD00A2D626 /* DVideoObject.m in Sources */,
 			);
@@ -646,6 +692,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		777A37741EBF9CED007C9E17 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				777A37731EBF9CED007C9E17 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		77E0AB751EB8CFE300A2D626 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -689,6 +743,8 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_ACTIVITY_MODE = "";
+				"DEBUG_ACTIVITY_MODE[sdk=iphonesimulator*]" = disable;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -737,6 +793,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_ACTIVITY_MODE = "";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
